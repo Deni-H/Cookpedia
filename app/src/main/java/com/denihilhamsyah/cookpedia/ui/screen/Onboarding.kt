@@ -34,7 +34,8 @@ fun Onboarding() {
         ) {
             Text(
                 modifier = Modifier.weight(1f),
-                text = stringResource(R.string.premium_recipes)
+                text = stringResource(R.string.premium_recipes),
+                color = Color.White
             )
             Column(
                 modifier = Modifier
@@ -52,8 +53,14 @@ fun Onboarding() {
                 verticalArrangement = Arrangement.SpaceEvenly,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(text = stringResource(R.string.lets_cooking))
-                Text(text = stringResource(R.string.best_recipes))
+                Text(
+                    text = stringResource(R.string.lets_cooking),
+                    color = Color.White
+                )
+                Text(
+                    text = stringResource(R.string.best_recipes),
+                    color = Color.White
+                )
                 Button(onClick = { /*TODO*/ }) {
                     Text(text = stringResource(R.string.start_cooking))
                     Icon(

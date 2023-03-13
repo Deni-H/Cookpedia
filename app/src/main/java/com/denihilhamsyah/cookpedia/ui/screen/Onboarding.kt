@@ -3,6 +3,7 @@ package com.denihilhamsyah.cookpedia.ui.screen
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
@@ -61,7 +62,13 @@ fun Onboarding() {
                     text = stringResource(R.string.best_recipes),
                     color = Color.White
                 )
-                Button(onClick = { /*TODO*/ }) {
+                Button(
+                    modifier = Modifier
+                        .height(50.dp)
+                        .width(200.dp),
+                    shape = RoundedCornerShape(8.dp),
+                    onClick = { /*TODO*/ }
+                ) {
                     Text(text = stringResource(R.string.start_cooking))
                     Icon(
                         painter = painterResource(id = R.drawable.ic_arrow_right),

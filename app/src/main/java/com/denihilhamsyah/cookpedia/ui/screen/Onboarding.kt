@@ -32,7 +32,7 @@ fun Onboarding() {
             modifier = Modifier.fillMaxSize(),
             painter = painterResource(id = R.drawable.bg_onboarding),
             contentDescription = "bg_onboarding",
-            contentScale = ContentScale.FillBounds
+            contentScale = ContentScale.Crop
         )
 
         Column(
